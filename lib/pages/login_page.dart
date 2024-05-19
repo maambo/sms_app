@@ -19,6 +19,7 @@ class LoginPage extends StatelessWidget {
             children: [
               const SizedBox(
                 width: double.infinity,
+                height: double.infinity,
                 child: Card(
                   child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -41,26 +42,6 @@ class LoginPage extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Column(
-                    children: [
-                      const TextField(
-                        keyboardType: TextInputType.multiline,
-                        maxLines: 8,
-                        decoration: InputDecoration(
-                            hintText: "Wright SMS",
-                            focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
-                                    width: 1,
-                                    color: Color.fromARGB(255, 100, 96, 96)))),
-                      ),
-                      ElevatedButton(onPressed: () {}, child: Text("Send SMS"))
-                    ],
-                  ),
-                ),
-              )
             ],
           ),
         ));
